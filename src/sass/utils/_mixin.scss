@@ -1,0 +1,11 @@
+@mixin flex-center($x, $y) {
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+}
+
+@mixin color-transitions($color) {
+    color: $color;
+    transition: color 250ms $timing-function;
+}
+

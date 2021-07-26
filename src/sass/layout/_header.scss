@@ -1,0 +1,70 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 6px;
+  padding-bottom: 15px;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    display: inline-block;
+    margin-right: auto;
+  }
+
+  .header-nav {
+    display: flex;
+    width: 100%;
+  }
+
+  .navigation {
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      @include flex-center(center, center)
+    }
+  }
+
+  .header-mobile-button {
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+
+  .header-button {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-left: 30px;
+    }
+  }
+}
+
+.navigation {
+
+  .navigation-link {
+    color: $white-color;
+    line-height: 1.3;
+    &:hover {
+      @include color-transitions($primary-text-color)
+    }
+  }
+
+  .current {
+    color: $primary-text-color;
+  }
+
+  .navigation-item + .navigation-item {
+    margin-left: 35px;
+  }
+}
