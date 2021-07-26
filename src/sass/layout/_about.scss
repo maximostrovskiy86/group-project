@@ -39,7 +39,8 @@
           font-size: 26px;
           line-height: 1.15;
       }
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
+          padding-top: 125px;
           font-size: 30px;
           line-height: 1.13;
           letter-spacing: 0.04em;      
@@ -68,11 +69,12 @@
         font-size: 48px;
         line-height: 1.46;
         }
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
+          margin-top: 16px;
           font-size: 58px;
           line-height: 1.14;
           letter-spacing: 0.06em;
-          margin-bottom: 102px;
+          margin-bottom: 55px;
           
         }
         }
@@ -92,7 +94,7 @@
     height: 339px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
        
 }
 }
@@ -122,9 +124,12 @@
     
         font-size: 14px;
         line-height: 1.76;
-        
-    } 
-    }
+        }
+        @media screen and (min-width: 1280px) {
+          padding-left: 74px;  
+          font-size: 16px;
+        }
+    }  
     
     .section-about-description-main {
       margin-top: 42px;
@@ -151,6 +156,11 @@
         font-size: 14px;
         line-height: 1.76;
         letter-spacing: 0.04em;
+      }
+      @media screen and (min-width: 1280px) {
+        margin-top: 35px;
+        padding-left: 74px;  
+        line-height: 1.94;
       }
     }
     
@@ -181,6 +191,11 @@
         letter-spacing: 0.04em;
     
       }
+      @media screen and (min-width: 1280px) {
+        margin-top: 35px;
+        padding-left: 74px;  
+        line-height: 1.94;
+      }
     }    
       
     .section-about-button {
@@ -204,6 +219,10 @@
       @media screen and (min-width: 768px) {
             margin-top: 62px;
             margin-left: 17px;
+      }
+      @media screen and (min-width: 1280px) {
+        margin-top: 45px;
+        margin-left: 74px;  
       }
     
       &:after {
@@ -290,6 +309,10 @@
       margin-top: 66px; 
       margin-bottom: 246px;      
     }
+    @media screen and (min-width: 1280px) {
+      margin-top: 146px;
+      
+    }
   }
   
   // .section-about-contain-item {
@@ -324,9 +347,14 @@
       &:not(:first-child) {
         margin-top: 0;
         margin-left: 60px;}
-        margin-bottom: 246px;
-
-  }
+        margin-bottom: 246px; 
+    }
+    @media screen and (min-width: 1280px) {
+      &:not(:first-child) {
+        margin-top: 0;
+        margin-left: 30px;}
+        margin-bottom: 310px; 
+    }
 }
 
 
@@ -347,9 +375,12 @@
       @media screen and (min-width: 768px) {
         margin-top: 36px;
         font-size: 48px;
-        text-transform: none;
-      
-      
+        text-transform: none;  
+      }
+      @media screen and (min-width: 1280px) {
+        margin-top: 40px;
+        font-size: 58px;
+        
       }
     }
     
@@ -357,15 +388,24 @@
       margin-bottom: 0;
       margin-top: 13px;
       padding-right: 70px;
-      font-family: DM Sans;
-      font-style: normal;
-      font-weight: 700;
+      // font-family: DM Sans;
+      // font-style: normal;
+      // font-weight: 700;
       font-size: 12px;
       line-height: 1.7;
       
       color: #000000;
       @media screen and (min-width: 768px) {
         padding-right: 40px;
+        font-size: 14px;
+        line-height: 1.74;
+      
     }
+      @media screen and (min-width: 1280px) {
+        padding-right: 40px;
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 1.76;
     }
+  }
     
