@@ -1,0 +1,81 @@
+.contacts {
+    background-image: linear-gradient(
+  to bottom,
+  $white-color 15%,
+  $accent-color 15%,
+
+);
+height: 600px;
+}
+
+.card-list {
+    width: 220px;
+    height: 427px;
+
+    padding: 43px 20px;
+
+    background: $white-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
+.card-list-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    border: none;
+
+    width: 80px;
+    height: 16px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+
+    text-transform: uppercase;
+
+    color: $white-color;
+    background: #F0D1A5;
+    border-radius: 4px;
+}
+
+.card-list-wrapper:not(:last-child) {
+
+}
+
+.card-list-subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+
+    color: #000000;
+}
+.card-list-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #907E82;
+}
+.card-time {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+
+    color: #FFA5BA;
+}
+.contacts-list-contacts {
+}
+.contacts-link {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #907E82;
+}
