@@ -4,6 +4,11 @@ const {height: main} = document
 document.querySelector('.hero').style.paddingTop = `${main}px`;
 
 
-$('.slayder').slick({
+$('.wrapper-slayder').slick({
   dots: true,
+  speed: 1000,
+  easing: 'ease',
+  // autoplay: true,
+  autoplayspeed: 3500,
+  adaptiveHeight: true,
 });

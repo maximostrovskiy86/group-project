@@ -1,0 +1,111 @@
+.slayder {
+   margin: 60px 0 75px 0;
+}
+//  
+.slayder__img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+   border-radius: 50%;
+   margin-bottom: 15px;
+}
+.text-tumb{
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+
+   max-width: 926px;
+   height: 138px;
+   background-color: #FAFAFA;
+   // background: repeating-linear-gradient(
+   //    #E1E1E1,
+   //    #E1E1E1 0.5px,
+   //    #FAFAFA 0px,
+   //    #FAFAFA 38px
+   // );
+   padding: 0 15px;
+}
+.slayder__text {
+   position: absolute;
+   z-index: 1;
+   background-image: repeating-linear-gradient(to top, #E1E1E1 0px 1px, transparent 1px 31px);
+
+   font-family: DM Sans;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.86;
+   letter-spacing: 0.04em;
+   text-align: center;
+   
+   color: #000000;
+   padding: 47px 89px 39px 87px;
+}
+.text-tumb::before{
+   cursor: pointer;
+   content: "";
+   position: absolute;
+   top: 32px;
+   left: 50px;
+
+   background-image: url(../images/costomer_reviews/background/1.png);
+   width: 54px;
+   height: 40px;
+}
+
+.slayder__addr {
+   position: relative;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.86;
+   letter-spacing: 0.04em;
+   text-align: center;
+   color: #000000;
+   background-image: none;
+   padding-top: 45px;
+   padding-bottom: 35px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.slayder__addr::before{
+   position: absolute;
+   top: 3%;
+   left: 50%;
+   width: 0px;
+   height: 4px;
+   content: '•';
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   color: #C7133E;
+}
+.slick-dots li.slick-active button:before{
+   content: '';
+   width: 12px;
+   height: 12px;
+   position: absolute;
+   top: 3px;
+   left: 5px;
+   display: block;
+   background-image: url(../images/costomer_reviews/svg/home1.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   object-fit: contain;
+   transform: scale(1.2);
+   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.slick-slide{
+   transform:scale(0.9);
+   opacity: 0;
+   transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1),
+               transform  50ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.slick-slide.slick-active{
+   transform:scale(1);
+   opacity: 1;
+   transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1),
+               transform  450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
