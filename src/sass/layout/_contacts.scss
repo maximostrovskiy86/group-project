@@ -1,9 +1,8 @@
 .contacts {
     background-image: linear-gradient(
     to bottom,
-    $white-color 8%,
-    #FFF5F6 8%,
-
+    $white-color 7%,
+    #FFF5F6 7%,
 );
 
     padding-bottom: 113px;
@@ -106,32 +105,45 @@
 
     color: #907E82;
 }
-
-.btn-contacts {
+.btn-contacts{
     display: flex;
     flex-direction: column;
     align-items: center;
+
     margin-top: 54px;
 }
-
 .btn-location {
-    width: 161.45px;
-    height: 44px;
 
+    width: 170px;
+    display: flex;
+    align-items: center;
+    white-space: unset;
+
+    padding-left: 19px;
+    padding-right: 30px;
+
+    &::after {
+        right: 20px;
+        background-image: url('../images/arrow-white-btn.svg');
+    }
+
+    background-color: $primary-text-color;
     color: $white-color;
-    background: $primary-text-color;
-    border-radius: 22px;
-    border: none;
+    
 }
 
-.btn-franchise{
+.btn-franchise {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    white-space: unset;
+
     margin-top: 10px;
 
-    width: 161.45px;
-    height: 44px;
+    padding-left: 40px;
+    padding-right: 30px;
 
-    color: $primary-text-color;
-    background: $white-color;
-    border-radius: 22px;
-    border: none;
+    &::after {
+        right: 20px;
+    }  
 }
