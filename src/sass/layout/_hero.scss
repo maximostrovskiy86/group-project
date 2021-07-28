@@ -1,3 +1,186 @@
 .hero {
+  position: relative;
+  //padding-bottom: 140px;
   background-color: $accent-color;
+
+.wrapper {
+  background-image: url("../images/hero-header/mobile-bg-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    background-image: url("../images/hero-header/tab-bg-home.jpg");
+    background-size: contain;
+}
+    @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: url("../images/hero-header/bg-home.jpg");
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+
+
+  .container {
+    position: relative;
+    @media screen and (min-width: 768px) {
+      background-image: url("../images/hero-header/tab-color.png"),
+      url("../images/hero-header/tab-food-trucks.png");
+      background-repeat: no-repeat;
+      background-position: top 94px right 0, top 151px right 0;
+    }
+    @media screen and (min-width: 1280px) {
+
+      background-image: url("../images/hero-header/color.png"),
+      url("../images/hero-header/food-trucks.png");
+      background-repeat: no-repeat;
+      background-position: top 75px right 0, top 170px right 0;
+    }
+  }
+}
+
+
+  @media screnn and (min-width: 768px) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .container {
+        background-image: url("../images/hero-header/tab-color2@.png"),
+        url("../images/hero-header/tab-food-trucks2@.png");
+      }
+    }
+  }
+
+  @media screnn and (min-width: 1280px) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .container {
+        background-image: url("../images/hero-header/color2@.png"),
+        url("../images/hero-header/food-trucks2@.png");
+      }
+    }
+  }
+}
+
+
+.hero-left {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 19px;
+
+    .hero-thumb {
+      flex-shrink: 0;
+    }
+    .ice-description {
+      max-width: 135px;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $white-color;
+
+      .hero-read-more {
+        display: flex;
+        width: 18px;
+        height: 18px;
+        background-color: $white-color;
+        border: none;
+        border-radius: 50%;
+        margin-top: 7px;
+        cursor: pointer;
+        transition: transform 250ms $timing-function;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      .read-icon {
+        margin: auto;
+        fill: $primary-text-color;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 56px;
+    .ice-description {
+      margin-left: 30px;
+      max-width: 200px;
+      font-size: 14px;
+      line-height: 1.4;
+
+      .hero-read-more {
+        width: 26px;
+        height: 26px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.hero-circle {
+  position: absolute;
+  left: 16px;
+  top: 83px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: #FFA5BA;
+
+  .hero-thumb-ice {
+    position: absolute;
+    right: 75px;
+    top: 25px;
+
+    @media screen and (min-width: 767px) {
+      left: 25%;
+      top: 20%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: 10%;
+    }
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 767px) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 60%;
+    top: 44%;
+    width: 324px;
+    height: 322px;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 60%;
+    top: 42%;
+    width: 538px;
+    height: 538px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.hero-right {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 0;
+  }
 }

@@ -1,4 +1,9 @@
-const {height: main} = document
-  .querySelector('.header').getBoundingClientRect();
+// const {height: main} = document
+//   .querySelector('.header').getBoundingClientRect();
+//
+// document.querySelector('.hero').style.paddingTop = `${main}px`;
 
-document.querySelector('.hero').style.paddingTop = `${main}px`;
+
+$('.slayder').slick({
+  dots: true,
+});
