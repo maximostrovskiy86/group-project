@@ -19,16 +19,42 @@
     </nav>
     <button
       type="button"
-      class="header-mobile-button is-open"
+      class="header-menu-button header-mobile-button is-open"
       data-menu-button
       aria-controls="menu-container"
       aria-expanded="false"
     >
       <svg width="20" height="20" aria-label="Переключатель мобильного меню">
-        <use class="nav-icon" href="./images/sprite.svg#icon-menu"></use>
-        <use class="nav-menu" href="./images/sprite.svg#icon-close"></use>
+        <use class="nav-icon" href="./images/sprite.svg#icon-menu_24px"></use>
+        <use class="nav-menu nav" href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <button class="header-button button">Buy now</button>
+  </div>
+
+  <!-- Мобильное меню -->
+  <div class="mobile-menu" id="menu-container" data-menu>
+    <button class="button mobile-button">Buy now</button>
+    <ul class="mobile-menu__navigation">
+      <li class="mobile-menu-item">
+        <a
+          class="mobile-menu-link mobile-menu-link-current"
+          href="./index.html"
+        >Home</a
+        >
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="">About us</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="">How it’s made?</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="">Our products</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="">Contact</a>
+      </li>
+    </ul>
   </div>
 </header>
