@@ -10,13 +10,6 @@ document.querySelectorAll('.mobile-menu-link').forEach(elem => {
   elem.onclick = closeMenu;
 });
 
-// function addClass() {
-//   document.querySelector('.navigation-link').classList.add('current');
-// }
-// document.querySelectorAll('.navigation-link').forEach(elem => {
-//   elem.onclick = addClass;
-// });
-
 $('.wrapper-slayder').slick({
   dots: true,
   speed: 1000,
