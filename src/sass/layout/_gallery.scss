@@ -87,7 +87,7 @@
 
 @media screen and (max-width: 1050px) {
 .gallery{
-   padding: 0 0 55% 0;
+   padding: 0 0 37% 0;
 }
 .gallery__container{
    padding-left: calc(15px + (135 - 15) * ((100vw - 320px) / (768 - 320)));
@@ -141,7 +141,7 @@
 
 @media screen and (min-width: 1050px) {
    .gallery{
-      padding: 0 0 600px 0;
+      padding: 0 0 445px 0;
    }
    .gallery__container{
       padding-left: 135px;
