@@ -11,9 +11,7 @@
         <div class="container">
         <ul class="card-list">
             <li class="card-list-item">
-                <button type="button" class="card-list-button">
-                    cafe
-                </button>
+                <span class="card-list-title">cafe</span>
                 <div class="card-list-wrapper">
                     <div class="card-box">
                         <p class="card-list-subtitle">
@@ -49,9 +47,7 @@
             </li>
 
             <li class="card-list-item">
-                <button type="button" class="card-list-button green-btn">
-                    foodtruck
-                </button>
+                <span class="card-list-title green-btn">foodtruck</span>
                 <div class="card-list-wrapper">
                     <div class="card-box">
                         <p class="card-list-subtitle">
@@ -87,9 +83,7 @@
             </li>
 
             <li class="card-list-item">
-                <button type="button" class="card-list-button">
-                    cafe
-                </button>
+                <span class="card-list-title">cafe</span>
                 <div class="card-list-wrapper">
                     <div class="card-box">
                         <p class="card-list-subtitle">
@@ -117,7 +111,7 @@
                         <a class="contacts-link" href="mailto:noreply@envato.com">
                             noreply@envato.com
                         </a>
-                        <a class="contacts-link" href="tel:+61(0)383766284 ">
+                        <a class="contacts-link" href="tel:+610383766284 ">
                             +61(0) 383 766 284 
                         </a>
                     </div>
@@ -125,14 +119,79 @@
             </li>
         </ul>
         <div class="btn-contacts">
-            <button type="button" class="btn-location button">
+            <button map-data-modal-open type="button" class="btn-location button">
                 Our Locations
             </button>
-            <button type="button" class="btn-franchise button">
+            <button data-modal-open type="button" class="btn-franchise button">
                 Franchise
             </button>
         </div>
         </div>    
     </section>
+<!-- MODAL -->
+<div data-modal class="backdrop is-hidden">
+    <div class="modal">
+        <button data-modal-close class="modal-close-btn" type="button">&#10006;</button>
+
+        <!-- FORM -->
+
+        <p class="modal-header">Leave your details, we will call you back</p>
+        <p class="modal-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, ullam!</p>
+
+        <form action="#" class="modal-form">
+        
+            <div class="form-field">
+        
+                <label for="name-input" class="form-field-label">Name</label>
+        
+                <div class="modal-box">
+        
+                    <input type="text" name="user-name" class="modal-box-input" id="name-input" autofocus />
+        
+
+        
+                </div>
+        
+            </div>
+
+            <div class="form-field">
+        
+                <label for="tel-input" class="form-field-label">Phone</label>
+        
+                <div class="modal-box">
+        
+                    <input type="tel" name="user-tel" class="modal-box-input" id="tel-input" />
+        
+        
+                </div>
+        
+            </div>
+
+            <div class="form-field">
+        
+                <label for="email-input" class="form-field-label">E-mail</label>
+        
+                <div class="modal-box">
+        
+                    <input type="email" name="user-email" class="modal-box-input" id="email-input" />
+        
+                </div>
+        
+            </div>
+
+                <button class="modal-form-btn button">Confirm</button>
+            
+        </form>
+    </div>
+</div>
+
+<!-- MODAL-MAP -->
+<div map-data-modal class="backdrop is-hidden">
+    <div class="map-modal">
+        <button map-data-modal-close class="map-modal-close-btn" type="button">&#10006;</button>
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d845591.1558374653!2d-118.300393!3d34.118434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x73ff07b1c2d6dadc!2z0J7QsdGB0LXRgNCy0LDRgtC-0YDQuNGPINCT0YDQuNGE0YTQuNGC!5e0!3m2!1sru!2sua!4v1627490004135!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
 </body>
 </html>
