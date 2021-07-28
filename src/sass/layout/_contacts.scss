@@ -9,11 +9,24 @@
 
     width: 100%;
     height: 100%;
+
+
 }
 .card-list {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .card-list-item{
     margin-top: 20px;
@@ -25,6 +38,24 @@
     background: $white-color;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+
+    @media screen and (min-width: 768px) {
+        width: 220px;
+        height: 544px;
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 330px;
+        height: 572px;
+
+        padding: 56px 44px;
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
 }
 
 .card-list-button {
@@ -50,6 +81,13 @@
     color: $white-color;
     background: #F0D1A5;
     border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+        width: 73px;
+        height: 28px;
+
+        font-size: 16px;
+    }
 }
 
 .green-btn {
@@ -57,6 +95,13 @@
     height: 16px;   
 
     background: #C2E297;
+
+    @media screen and (min-width: 768px) {
+        width: 138px;
+        height: 28px;
+
+        font-size: 16px;
+    }
 }
 
 .card-box::after {
@@ -81,6 +126,14 @@
     letter-spacing: 0.04em;
 
     color: #000000;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+    }
 }
 .card-list-text {
     font-weight: 500;
@@ -88,6 +141,15 @@
     line-height: 1.5;
 
     color: #907E82;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.83;
+    }
 }
 .card-time {
     font-weight: 500;
@@ -95,6 +157,15 @@
     line-height: 1.86;
 
     color: #FFA5BA;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.83;
+    }
 }
 .contacts-link {
     display: flex;
@@ -104,6 +175,15 @@
     line-height: 1.5;
 
     color: #907E82;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.83;
+    }
 }
 .btn-contacts{
     display: flex;
@@ -111,6 +191,13 @@
     align-items: center;
 
     margin-top: 54px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
 }
 .btn-location {
 
@@ -145,5 +232,9 @@
 
     &::after {
         right: 20px;
-    }  
+    }
+    
+    @media screen and (min-width: 768px) {
+    margin-left: 15px;
+    }
 }
