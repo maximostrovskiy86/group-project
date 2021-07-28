@@ -14,7 +14,7 @@ $('.wrapper-slayder').slick({
   dots: true,
   speed: 1000,
   easing: 'ease',
-  // autoplay: true,
+  autoplay: true,
   autoplayspeed: 3500,
   adaptiveHeight: true,
   arrows: false,
