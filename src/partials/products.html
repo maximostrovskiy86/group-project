@@ -1,9 +1,9 @@
-<section class="container">
+<section class="container" id="products">
   <div class="products">
     <span class="products-before">100% natural</span>
     <h2 class="products-title">products</h2>
     <ul class="products-list">
-      <li class="products-link">
+      <li class="products-link background-1">
         <picture>
           <source
             srcset="
@@ -27,10 +27,85 @@
         </picture>
         <h1 class="products-link-title">ice cream</h1>
         <p class="products-link-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et
+          We implement the technology of preparation of frozen gelato, soft, frozen yogurt, ingredients and accessories for which we sell
         </p>
-        <button class="products-button">
+        <button class="products-button" type="button" data-modal-open>
+          <svg class="products-icon" width="15" height="15">
+            <use href="./images/sprite.svg#icon-arrow-right2"></use>
+          </svg>
+        </button>
+      </li>
+
+      <li class="products-link background-2">
+        <picture>
+          <source
+            srcset="
+              ./images/products/coffe/coffe-2x-desk.png 2x,
+              ./images/products/coffe/coffe-1x-desk.png 1x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/products/coffe/coffe-2x-tablet.png 2x,
+              ./images/products/coffe/coffe-1x-tablet.png 1x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/products/coffe/coffe-2x.png 2x,
+              ./images/products/coffe/coffe-1x.png 1x
+            "
+            media="(min-width: 320px)"
+          />
+          <img class="products-image" src="./images/products/coffe/coffe-1x.png" alt="Морозиво" />
+        </picture>
+        <h1 class="products-link-title">ice coffee</h1>
+        <p class="products-link-text">
+          We implement the technology of preparation of frozen gelato, soft, frozen yogurt, ingredients and accessories for which we sell
+        </p>
+        <button class="products-button" type="button" data-modal-open-2>
+          <svg class="products-icon" width="15" height="15">
+            <use href="./images/sprite.svg#icon-arrow-right2"></use>
+          </svg>
+        </button>
+      </li>
+
+      <li class="products-link background-3">
+        <picture>
+          <source
+            srcset="
+              ./images/products/ice-coffe/ice-coffe-2x-desk.png 2x,
+              ./images/products/ice-coffe/ice-coffe-1x-desk.png 1x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/products/ice-coffe/ice-coffe-2x-tablet.png 2x,
+              ./images/products/ice-coffe/ice-coffe-1x-tablet.png 1x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/products/ice-coffe/ice-coffe-2x.png 2x,
+              ./images/products/ice-coffe/ice-coffe-1x.png 1x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            class="products-image"
+            src="./images/products/ice-coffe/ice-coffe-1x.png"
+            alt="Морозиво"
+          />
+        </picture>
+        <h1 class="products-link-title">milkshakes</h1>
+        <p class="products-link-text">
+          We implement the technology of preparation of frozen gelato, soft, frozen yogurt, ingredients and accessories for which we sell
+        </p>
+        <button class="products-button" type="button" data-modal-open-3>
           <svg class="products-icon" width="15" height="15">
             <use href="./images/sprite.svg#icon-arrow-right2"></use>
           </svg>
@@ -39,3 +114,73 @@
     </ul>
   </div>
 </section>
+
+<!--products-modal-1-->
+<div class="modal__backdrop modal__hidden" data-modal>
+  <div class="modal background-1">
+      <iframe
+        class="modal-video modal-1"
+        src="https://www.youtube.com/embed/7gJIyHnD710?enablejsapi=1&version=3&playerapiid=ytplayer"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <button class="modal__close-btn btn-1" data-modal-close type="button">&#10006;</button>
+    </div>
+  </div>
+</div>
+
+<!--products-modal-2-->
+<div class="modal__backdrop modal__hidden" data-modal-2>
+  <div class="modal background-2">
+    <iframe 
+      class="modal-video modal-2"
+      src="https://www.youtube.com/embed/2W-D2D9Ivl8?enablejsapi=1&version=3&playerapiid=ytplayer" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+    ></iframe>
+    <button class="modal__close-btn btn-2" data-modal-close-2 type="button">&#10006;</button>
+  </div>
+</div>
+
+<!--products-modal-3-->
+<div class="modal__backdrop modal__hidden" data-modal-3>
+  <div class="modal background-3">
+    <iframe
+      class="modal-video modal-3"
+      src="https://www.youtube.com/embed/DWG--xG0i-A?enablejsapi=1&version=3&playerapiid=ytplayer"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <button class="modal__close-btn btn-3" data-modal-close-3 type="button">&#10006;</button>
+
+  </div>
+</div>
+
+<script language="javascript" 
+        type="text/javascript" 
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+
+<script>
+  $('button.btn-1').click(function(){
+    $('.modal-1')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+  });
+  $('button.btn-2').click(function(){
+    $('.modal-2')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+  });
+  $('button.btn-3').click(function(){
+    $('.modal-3')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+  });
+</script>
+
+<script src="./js/products-modal-1.js"></script>
+<script src="./js/products-modal-2.js"></script>
+<script src="./js/products-modal-3.js"></script>
+
+
