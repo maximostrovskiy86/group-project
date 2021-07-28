@@ -1,5 +1,6 @@
     
 .section-about {
+  padding-top: 125px;
   background-color: #FFF5F6;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -7,7 +8,13 @@
       @media screen and (min-width: 375px) {
       background-image: none;
       }
+      @media screen and (min-width: 768px) {
+        padding-top: 130px;
+        padding-bottom: 246px; 
+      }
       @media screen and (min-width: 1280px) {
+      padding-top: 125px;  
+      padding-bottom: 140px; 
       background-position: 50% 35%;
       background-image: url("../images/about/desktop/bgmade_second_desk_1x-min.png");
       @media screen and (min-device-pixel-ratio: 2),
@@ -20,7 +27,6 @@
     
 .section-about-headline {
   margin-bottom: 0px;
-  padding-top: 125px;
   font-family: Titan One;
   font-weight: 400;
   font-size: 18px;
@@ -30,12 +36,10 @@
   text-transform: uppercase;
   color: #FFA5BA;
       @media screen and (min-width: 768px) {
-      padding-top: 130px;
       font-size: 26px;
       line-height: 1.15;
       }
       @media screen and (min-width: 1280px) {
-      padding-top: 125px;
       font-size: 30px;
       line-height: 1.13;
       letter-spacing: 0.04em;      
@@ -79,24 +83,29 @@
     align-items: center;
     justify-content: space-between;
     &-picture {
+    position: relative;
     width: 50%;
-    height: 339px;
+    top: -45px;
     }
   }
 }
     
 .section-about-main-content-text {
   width: 100%;
-  @media screen and (min-width: 768px) {
+  padding-left: 30px;
+   @media screen and (min-width: 768px) {
     width: 50%;
-}
+    padding-left: 17px;
+  }  
+   @media screen and (min-width: 1280px) {  
+    padding-left: 74px;  
+  }
 }
 
 .section-about-description {
   margin-top: 39px;
   margin-bottom: 0;
   padding-right: 30px;
-  padding-left: 30px;
   width:100%;
 
   text-align: left;
@@ -108,13 +117,10 @@
       @media screen and (min-width: 768px) {
       margin-top: 50px;
       padding-right: 0px;
-      padding-left: 17px;
-    
       font-size: 14px;
       line-height: 1.76;
     }
       @media screen and (min-width: 1280px) {
-      padding-left: 74px;  
       font-size: 16px;
     }
 }  
@@ -123,7 +129,7 @@
   margin-top: 42px;
   margin-bottom: 0;
   padding-right: 30px;
-  padding-left: 30px;
+  
     
   width:100%;
   text-align: left;
@@ -136,15 +142,14 @@
       @media screen and (min-width: 768px) {
       margin-top: 30px;
       padding-right: 0px;
-      padding-left: 17px;
-    
+       
       font-size: 14px;
       line-height: 1.76;
       letter-spacing: 0.04em;
     }
       @media screen and (min-width: 1280px) {
       margin-top: 35px;
-      padding-left: 74px;  
+        
       line-height: 1.94;
     }
 }
@@ -153,7 +158,7 @@
   margin-top: 20px;
   margin-bottom: 0;
   padding-right: 30px;
-  padding-left: 30px;
+  
    
   width:100%;
   text-align: left;
@@ -166,14 +171,12 @@
       @media screen and (min-width: 768px) {
       margin-top: 18px;
       padding-right: 0px;
-      padding-left: 17px;
       font-size: 14px;
       line-height: 1.76;
       letter-spacing: 0.04em;
     }
       @media screen and (min-width: 1280px) {
       margin-top: 35px;
-      padding-left: 74px;  
       line-height: 1.94;
     }
 }    
@@ -182,7 +185,6 @@
   position: relative;
   height: 44px;
   margin-top: 17px;
-  margin-left: 30px;
   padding-left: 37px;
   padding-right: 58px;
   font-weight: 700;
@@ -198,11 +200,9 @@
   transition: background-color 250ms $timing-function;
       @media screen and (min-width: 768px) {
       margin-top: 62px;
-      margin-left: 17px;
     }
       @media screen and (min-width: 1280px) {
       margin-top: 45px;
-      margin-left: 74px;  
     }
     
       &:after {
@@ -223,21 +223,17 @@
     }
 
 .section-about-contain-list {
-  display: flex;
-  flex-direction: column;
   text-align: left;
     
   margin-top: 39px;
   padding-left: 0;
   padding-bottom: 145px;
     @media screen and (min-width: 768px) {
-    flex-direction: row;
-    margin-top: 66px; 
-    margin-bottom: 246px;      
+    display: flex;
+    margin-top: 100px; 
     }
     @media screen and (min-width: 1280px) {
       margin-top: 146px;
-      
     }
   }
   
@@ -254,13 +250,13 @@
       &:not(:first-child) {
         margin-top: 0;
         margin-left: 60px;}
-        margin-bottom: 246px; 
+       
     }
     @media screen and (min-width: 1280px) {
       &:not(:first-child) {
         margin-top: 0;
         margin-left: 30px;}
-        margin-bottom: 310px; 
+        
     }
 }
 
