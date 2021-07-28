@@ -25,7 +25,7 @@
             <p class="section-about-description-ending">
             Aliquam erat volutpat. Aenean accumsan.
             </p>
-            <button type="button" class="section-about-button">Read more</button>
+            <button type="button" data-modal-open class="section-about-button">Read more</button>
         </div>
         </div>
             <ul class="section-about-contain-list">
@@ -66,21 +66,21 @@
                 </li>
             </ul>
         </div>
-</section>
+    </section>
         <!----------Modal Window-------------->
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button class="modal__close-btn" type="button" data-modal-close><span>&#10006;</span></button>
+        <div class="backdrop-about is-hidden" data-modal>
+            <div class="modal-about">
+                <button class="modal-about__close-btn" type="button" data-modal-close><span>&#10006;</span></button>
                 <ul class="section-about-contain-list-modal">
                     <li class="section-about-contain-item-modal">
                         <picture class="section-about-contain-item-picture-modal">
                             <source srcset="./images/about/desktop/milk_bucket_desk_2x-min.png 2x, ./images/about/desktop/milk_bucket_desk_1x-min.png 1x" media="(min-width: 1200px)">
                             <source srcset="./images/about/tablet/milk_bucket_tab_2x-min.png 2x, ./images/about/tablet/milk_bucket_tab_1x-min.png 1x" media="(min-width: 768px)">
                             <source srcset="./images/about/mobile/milk_bucket_mob_2x-min.png 2x, ./images/about/mobile/milk_bucket_mob_1x-min.png 1x" media="(min-width: 480px)">
-                            <img src="./images/about/desktop/milk_bucket_desk_1x-min.png" alt="Milk bucket"/>
+                            <img class="about-icons-modal" src="./images/about/desktop/milk_bucket_desk_1x-min.png" alt="Milk bucket"/>
                         </picture>
                         <p class="section-about-contain-item-text-modal">
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nihil nostrum blanditiis ullam fugiat. Ab et soluta vero quas velit?
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nihil nostrum blanditiis ullam fugiat.
                         </p>
                     </li>
                     <li class="section-about-contain-item-modal">
@@ -91,14 +91,14 @@
                             <source srcset="./images/about/desktop/fruit_bucket_desk_2x-min.png 2x, ./images/about/desktop/fruit_bucket_desk_1x-min.png 1x" media="(min-width: 1200px)">
                             <source srcset="./images/about/tablet/fruit_bucket_tab_2x-min.png 2x, ./images/about/tablet/fruit_bucket_tab_1x-min.png 1x" media="(min-width: 768px)">
                             <source srcset="./images/about/mobile/fruit_bucket_mob_2x-min.png 2x, ./images/about/mobile/fruit_bucket_mob_1x-min.png 1x" media="(min-width: 480px)">
-                            <img src="./images/about/desktop/fruit_bucket_desk_1x-min.png" alt="Fruit's bucket"/>
+                            <img class="about-icons-modal" src="./images/about/desktop/fruit_bucket_desk_1x-min.png" alt="Fruit's bucket"/>
                         </picture>
                     <li class="section-about-contain-item-modal">
                         <picture class="section-about-contain-item-picture-modal">
                             <source srcset="./images/about/desktop/heart_desk_2x-min.png 2x, ./images/about/desktop/heart_desk_1x-min.png 1x" media="(min-width: 1200px)">
                             <source srcset="./images/about/tablet/heart_tab_2x-min.png 2x, ./images/about/tablet/heart_tab_1x-min.png 1x" media="(min-width: 768px)">
                             <source srcset="./images/about/mobile/heart_mob_2x-min.png 2x, ./images/about/mobile/heart_mob_1x-min.png 1x" media="(min-width: 480px)">
-                            <img src="./images/about/desktop/heart_desk_1x-min.png" alt="Candy with shape of heart"/>
+                            <img class="about-icons-modal" src="./images/about/desktop/heart_desk_1x-min.png" alt="Candy with shape of heart"/>
                         </picture>
                         <p class="section-about-contain-item-text-modal">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit enim id, dicta eos ad quia quod accusamus molestias?
@@ -107,6 +107,8 @@
                 </ul>
             </div>
         </div>
+        <!-- <script src="./js/modal_about.js"></script> -->
+    
 
 
 
