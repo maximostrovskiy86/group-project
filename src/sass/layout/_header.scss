@@ -6,9 +6,10 @@
   padding-top: 6px;
   padding-bottom: 15px;
   background-color: transparent;
+  z-index: 1;
 
   @media screen and (min-width: 768px) {
-    padding-top: 37px;
+    padding-top: 20px;
   }
 
   .container {
@@ -48,6 +49,10 @@
       margin-left: 30px;
     }
   }
+}
+
+.header-scroll {
+  background-color: #d4144373;
 }
 
 .navigation {
