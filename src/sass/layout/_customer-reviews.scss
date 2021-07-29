@@ -67,17 +67,20 @@
 .dots{
    align-items: center;
    justify-content: center;
-   padding: 4px;
+   padding:  0px;
    color: #C7133E;
    text-align: center;
    margin: 0 5px 0 5px;
+}
+.slick-dots li button:before{
+   transform: scale(1.8);
 }
 .slick-dots li.slick-active button:before{
    content: '';
    width: 12px;
    height: 12px;
    position: absolute;
-   top: 3px;
+   top: 5px;
    left: 5px;
    display: block;
    background-image: url(../images/costomer_reviews/svg/home1.svg);
