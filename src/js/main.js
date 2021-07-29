@@ -1,8 +1,16 @@
+import '/js/mobile-menu.js';
+import '/js/modal-hero.js';
+import '/js/products-modal-1.js';
+import '/js/products-modal-2.js';
+import '/js/products-modal-3.js';
+import '/js/modal_about.js';
+import '/js/modal-contacts.js';
+import '/js/map-modal.js';
+
 // CLOSE MOBILE MENU
 
 function closeMenu() {
   document.querySelector('.mobile-menu').classList.remove('is-open');
-  // document.querySelector('.svg-icon').classList.replace('burger', 'cross');
 }
 
 document.querySelectorAll('.mobile-menu-link').forEach(elem => {
