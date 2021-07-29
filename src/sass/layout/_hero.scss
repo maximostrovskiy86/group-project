@@ -1,50 +1,51 @@
 .hero {
   position: relative;
-  //padding-bottom: 140px;
   background-color: $accent-color;
 
-.wrapper {
-  background-image: url("../images/hero-header/mobile-bg-home.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    background-image: url("../images/hero-header/tab-bg-home.jpg");
-    background-size: contain;
-}
-    @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    background-image: url("../images/hero-header/bg-home.jpg");
+  .wrapper {
+    background-image: url("../images/hero-header/mobile-bg-home.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-  }
+    margin: 0 auto;
 
-  @media screen and (min-width: 1280px) {
-    width: 1050px;
-  }
+    @media screen and (min-width: 480px) {
+      width: 480px;
+      background-image: url("../images/hero-header/tab-bg-home.jpg");
+      background-position-x: 65%;
+      background-size: cover;
+    }
 
-
-  .container {
-    position: relative;
     @media screen and (min-width: 768px) {
-      background-image: url("../images/hero-header/tab-color.png"),
-      url("../images/hero-header/tab-food-trucks.png");
-      background-repeat: no-repeat;
-      background-position: top 94px right 0, top 151px right 0;
+      width: 768px;
     }
-    @media screen and (min-width: 1280px) {
 
-      background-image: url("../images/hero-header/color.png"),
-      url("../images/hero-header/food-trucks.png");
-      background-repeat: no-repeat;
-      background-position: top 75px right 0, top 170px right 0;
+    @media screen and (min-width: 1024px) {
+      background-image: url("../images/hero-header/bg-home.jpg");
+      background-size: cover;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 1050px;
+    }
+
+    .container {
+      position: relative;
+      @media screen and (min-width: 768px) {
+
+        background-image: url("../images/hero-header/tab-color.png"),
+        url("../images/hero-header/tab-food-trucks.png");
+        background-repeat: no-repeat;
+        background-position: top 94px right 0, top 151px right 0;
+      }
+      @media screen and (min-width: 1280px) {
+
+        background-image: url("../images/hero-header/color.png"),
+        url("../images/hero-header/food-trucks.png");
+        background-repeat: no-repeat;
+        background-position: top 75px right 0, top 170px right 0;
+      }
     }
   }
-}
 
 
   @media screnn and (min-width: 768px) {

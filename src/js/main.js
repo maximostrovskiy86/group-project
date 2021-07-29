@@ -1,14 +1,12 @@
-// const {height: main} = document
-//   .querySelector('.header').getBoundingClientRect();
-//
-// document.querySelector('.hero').style.paddingTop = `${main}px`;
-
 function closeMenu() {
   document.querySelector('.mobile-menu').classList.remove('is-open');
 }
+
 document.querySelectorAll('.mobile-menu-link').forEach(elem => {
   elem.onclick = closeMenu;
 });
+
+
 
 $('.wrapper-slayder').slick({
   dots: true,
