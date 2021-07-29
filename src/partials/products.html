@@ -136,12 +136,12 @@
 <!--products-modal-2-->
 <div class="products-modal__backdrop products-modal__hidden" products-data-modal-2>
   <div class="products-modal background-2">
-    <iframe 
+    <iframe
       class="products-modal-video products-modal-2"
-      src="https://www.youtube.com/embed/2W-D2D9Ivl8?enablejsapi=1&version=3&playerapiid=ytplayer" 
-      title="YouTube video player" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      src="https://www.youtube.com/embed/2W-D2D9Ivl8?enablejsapi=1&version=3&playerapiid=ytplayer"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     ></iframe>
     <button class="products-modal__close-btn btn-2" products-data-modal-close-2 type="button">&#10006;</button>
@@ -164,25 +164,5 @@
   </div>
 </div>
 
-<script language="javascript" 
-        type="text/javascript" 
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-</script>
-
-<script>
-  $('button.btn-1').click(function(){
-    $('.products-modal-1')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-  });
-  $('button.btn-2').click(function(){
-    $('.products-modal-2')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-  });
-  $('button.btn-3').click(function(){
-    $('.products-modal-3')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-  });
-</script>
-
-<script src="./js/products-modal-1.js"></script>
-<script src="./js/products-modal-2.js"></script>
-<script src="./js/products-modal-3.js"></script>
 
 
