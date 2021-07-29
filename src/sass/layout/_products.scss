@@ -103,6 +103,7 @@
         font-size: 30px;
         line-height: 1.13;
       }
+
       &::after {
         content: '...';
         display: block;
@@ -196,9 +197,11 @@
 .background-1 {
   background-color: #ffb8ca;
 }
+
 .background-2 {
   background-color: #f0d1a5;
 }
+
 .background-3 {
   background-color: #c2e297;
 }
@@ -285,3 +288,4 @@
     }
   }
 }
+

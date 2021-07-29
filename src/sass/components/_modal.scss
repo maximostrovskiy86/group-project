@@ -31,6 +31,7 @@
   3px 0 1px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
   transition: opacity 250ms $timing-function, transform 250ms $timing-function;
+  z-index: 10;
 
   @media screen and (max-width: 320px) {
     padding: 25px;

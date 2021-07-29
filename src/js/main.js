@@ -1,4 +1,5 @@
 import '/js/mobile-menu.js';
+import '/js/modal-menu.js';
 import '/js/modal-hero.js';
 import '/js/products-modal-1.js';
 import '/js/products-modal-2.js';

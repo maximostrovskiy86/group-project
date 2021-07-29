@@ -13,7 +13,5 @@
 
         mobileMenu.classList.toggle('is-open');
     }
-
-
 })();
 
