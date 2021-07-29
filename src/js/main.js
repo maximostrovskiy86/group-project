@@ -1,4 +1,3 @@
-
 import '/js/mobile-menu.js';
 import '/js/modal-menu.js';
 import '/js/modal-hero.js';
@@ -10,9 +9,9 @@ import '/js/modal-contacts.js';
 import '/js/map-modal.js';
 
 // CLOSE MOBILE MENU
-
 function closeMenu() {
   document.querySelector('.mobile-menu').classList.remove('is-open');
+  document.querySelector('.burger').classList.toggle('icon');
 }
 
 document.querySelectorAll('.mobile-menu-link').forEach(elem => {
