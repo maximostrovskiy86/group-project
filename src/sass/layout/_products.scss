@@ -168,20 +168,24 @@
     }
 
     &:hover {
+      transition: background-color 300ms linear;
       background-color: #d41443;
       cursor: pointer;
     }
 
     &:focus {
+      transition: background-color 300ms linear;
       background-color: #d41443;
       cursor: pointer;
     }
 
     &:hover .products-icon {
+      transition: fill 300ms linear;
       fill: #fff;
     }
 
     &:focus .products-icon {
+      transition: fill 300ms linear;
       fill: #fff;
     }
   }
@@ -211,6 +215,7 @@
   height: 50%;
   border-radius: 20px;
   position: absolute;
+  overflow: hidden;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -223,6 +228,7 @@
   }
 
   &__backdrop {
+    z-index: 5;
     width: 100%;
     height: 100%;
     position: fixed;
