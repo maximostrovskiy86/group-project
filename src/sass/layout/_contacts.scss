@@ -18,7 +18,6 @@
 
 }
 .card-list {
-    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -36,6 +35,9 @@
     }
 }
 .card-list-item {
+
+    margin-top: 40px;
+
     width: 220px;
 
     padding: 43px 20px;
@@ -401,7 +403,7 @@
 
 //------------MODAL-MAP--------------
 
-.map-modal {
+.map-modal-wrap {
     position: absolute;
     width: 100%;
     max-width: 250px;
