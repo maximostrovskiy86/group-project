@@ -1,8 +1,10 @@
-
 // CLOSE MOBILE MENU
+
 function closeMenu() {
   document.querySelector('.mobile-menu').classList.remove('is-open');
+  // document.querySelector('.svg-icon').classList.replace('burger', 'cross');
 }
+
 document.querySelectorAll('.mobile-menu-link').forEach(elem => {
   elem.onclick = closeMenu;
 });
