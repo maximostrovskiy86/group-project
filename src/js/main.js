@@ -1,3 +1,4 @@
+
 import '/js/mobile-menu.js';
 import '/js/modal-hero.js';
 import '/js/products-modal-1.js';
@@ -28,18 +29,25 @@ $('.wrapper-slayder').slick({
   arrows: false,
 });
 
-
 //MODAL PRODUCTS
 $('button.btn-1').click(function () {
-  $('.products-modal-1')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+  $('.products-modal-1')[0].contentWindow.postMessage(
+    '{"event":"command","func":"' + 'stopVideo' + '","args":""}',
+    '*',
+  );
 });
 $('button.btn-2').click(function () {
-  $('.products-modal-2')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+  $('.products-modal-2')[0].contentWindow.postMessage(
+    '{"event":"command","func":"' + 'stopVideo' + '","args":""}',
+    '*',
+  );
 });
 $('button.btn-3').click(function () {
-  $('.products-modal-3')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+  $('.products-modal-3')[0].contentWindow.postMessage(
+    '{"event":"command","func":"' + 'stopVideo' + '","args":""}',
+    '*',
+  );
 });
-
 
 //HEADER
 jQuery(function (jQuery) {
@@ -54,10 +62,12 @@ jQuery(function (jQuery) {
 
 // SCROLL
 $(document).ready(function () {
-  $(".navigation, .mobile-menu__navigation, .button-scroll").on("click", "a", function (event) {
+  $('.navigation, .mobile-menu__navigation, .button-scroll').on('click', 'a', function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
-      top = $(id).offset().top + (-50);
-    $('body,html').animate({scrollTop: top}, 1250);
+      top = $(id).offset().top + -50;
+    $('body,html').animate({ scrollTop: top }, 1250);
   });
 });
+
+AOS.init();
