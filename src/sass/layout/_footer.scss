@@ -107,6 +107,7 @@
   @media screen and (min-width: 1280px) {
     .social-media__item :hover {
       background-color: $primary-text-color;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
